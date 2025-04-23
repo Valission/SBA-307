@@ -1,0 +1,17 @@
+p{
+    display: flex;
+    width: ;
+    text-align: center;
+    justify-content:left ;
+}
+.text{
+    margin: auto;
+    width: 40%;
+}
+.pages{
+    display: inline;
+}
+.page-change{
+    margin: auto;
+    width: 5%;
+}
