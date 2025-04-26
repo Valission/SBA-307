@@ -13,5 +13,10 @@ p{
 }
 .page-change{
     margin: auto;
-    width: 5%;
+    width: 2%;
+    text-align: ;
+    padding-top: 10px;
+}
+a:visited{
+    color: red;
 }

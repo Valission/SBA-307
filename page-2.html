@@ -4,8 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: rgb(0, 99, 95);
+        }
+        .pizza{
+            margin: auto;
+            width: 35%;
+            transition-duration: 2s;
+        }
+        .pizza:hover{
+            transform: rotate(360deg);
+        }
+        .pizza_prices{
+            /* display: inline; */
+            margin: auto;
+            width: 15%;
+            
+        }
+        table{
+            width: 200px;
+            height: 300px;
+            text-align: center;
+            border: 5px solid green;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+        .large{
+            display: inline;
+            font-weight: lighter;
+        }
+        .large:hover{
+            font-weight: bolder;
+            font-size: larger;
+        }
+        .toppings{
+            border-color: black;
+            border: 3px solid white;
+            width: 100px;
+            margin: auto;
+        }
+        .submit{
+            border: 5px solid goldenrod;
+            background-color: gold;
+            border-radius: 5px;
+            margin-left:30%;
+            width: 40%;
+        }
+        .submit:active{
+            background-color: goldenrod;
+        }
+    </style>
 </head>
 <body>
+    
+    <img src="images/pexels-mike-468229-1181810.jpg" alt="Welcome to NYC" style="width: 100%; height: 200px;">
+    <div class="text">
+        <p>New York-style pizza has its roots in Neapolitan pizza from Naples, Italy. 
+            When Italian immigrants came to the U.S. in the late 19th and early 20th centuries, they brought their pizza-making traditions with them.
+            The first known pizzeria in the U.S. was Lombardi’s, opened in 1905 in Manhattan’s Little Italy by Gennaro Lombardi. 
+            He adapted traditional Neapolitan pizza to American tastes and cooking methods—using a coal-fired oven instead of a wood-fired one,
+            and making larger slices that could be eaten on the go.By the 1920s–30s, pizza was spreading through the five boroughs and developing its own identity:</p>
+        <UL>
+            <li><div class="large">Large</div>, thin, foldable slices.</li>
+            <li>Crispy yet chewy crust, due to high-gluten bread flour and NYC’s mineral-rich tap water</li>
+            <li>Simple toppings: Tomato sauce and mozzarella were standard, with optional extras like pepperoni or mushrooms</li>
+            <li>
+                Baked in coal or gas ovens, giving a slightly charred, flavorful crust.</li>
+        </UL>
+    </div>    
+    <div class="pizza"> <img src="images/food-7248455_640.png" alt="pizza"></div>
+    <div class="pizza_prices">
+        <table class="table table-striped" style="--bs-table-bg: transparent;
+        --bs-table-accent-bg: rgba(0, 46, 250, 0.5);">
+                <caption style="margin: auto; width: 40%;"><b>Data of a slice</b></caption>
+              <thead>
+                <tr>
+                  <th scope="col">Toppings</th>
+                  <th scope="col">Calories</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Cheese</th>
+                  <td>180 Cal</td>
+                  <td>$1.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pepperoni</th>
+                  <td>190 Cal</td>
+                  <td>$1.50</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bacon</th>
+                  <td>200 Cal</td>
+                  <td>$2.50</td>
+                </tr>
+              </tbody>
+            </table>
+            <p style="margin: auto; width: 45%;">Choose Toppings</p>
+            <div class="toppings">
+                <input type="checkbox">Cheese
+                <br>
+                <input type="checkbox"> Pepperoni
+                <br>
+                <input type="checkbox"> Bacon
+            </div>
+            <input class="submit" type="submit">
+    </div>
+    <div class="page-change">
+        <p class="pages"><a href="page-1.html">1</a></p>
+        <P class="pages current"><b>2</b></P>
+        <p class="pages"><a href="page-3.html">3</a></p>
+    </div>
+
     
 </body>
 </html>
